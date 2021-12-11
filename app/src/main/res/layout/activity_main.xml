@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.MainActivity">
+
+   <LinearLayout
+       android:paddingEnd="20dp"
+       android:paddingStart="20dp"
+       android:orientation="vertical"
+       android:id="@+id/loginlayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <ImageView
+           android:id="@+id/logo"
+           android:layout_marginTop="20dp"
+           android:layout_gravity="center"
+           android:src="@mipmap/ic_launcher"
+           android:layout_width="48dp"
+           android:layout_height="48dp"/>
+
+       <TextView
+           android:textSize="22sp"
+           android:textStyle="bold"
+           android:layout_below="@id/logo"
+           android:layout_gravity="center"
+           android:text="Welcome"
+           android:layout_marginTop="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+       <TextView
+           android:textSize="18sp"
+           android:textStyle="bold"
+           android:text="Email"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+       <androidx.appcompat.widget.AppCompatEditText
+           android:hint="Email"
+           android:layout_margin="2dp"
+           android:padding="8dp"
+           android:background="@drawable/roundcorner"
+           android:id="@+id/username"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+       </androidx.appcompat.widget.AppCompatEditText>
+       <TextView
+           android:textSize="18sp"
+           android:textStyle="bold"
+           android:text="Password"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <androidx.appcompat.widget.AppCompatEditText
+           android:hint="Password"
+           android:layout_margin="2dp"
+           android:padding="8dp"
+           android:background="@drawable/roundcorner"
+           android:id="@+id/password"
+           android:inputType="textPassword"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+       </androidx.appcompat.widget.AppCompatEditText>
+
+       <Button
+           android:layout_marginTop="20dp"
+           android:text="LOGIN"
+           android:id="@+id/login"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+       </Button>
+
+
+   </LinearLayout>
+
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressbar"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
+
+
+    <RelativeLayout
+        android:background="@color/light_blue"
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
